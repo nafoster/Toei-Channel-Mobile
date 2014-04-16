@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+         <!-- Include the compiled Ratchet CSS -->
+    <link href="css/ratchet.css" rel="stylesheet">
+    <link href="css/ratchet-theme-android.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Include the compiled Ratchet JS -->
+    <script src="js/ratchet.min.js"></script>
+    <script src="js/push.js"></script>
+        <title>Toei Channel</title>
+    </head>
+    <body>
+            <!-- Make sure all your bars are the first things in your <body> -->
+    <header class="bar bar-nav">
+    <a href="#search" class="icon icon-search pull-left"></a>
+
+        <button class="btn pull-right">
+        Your Account
+      </button>
+      <h1 class="title"> <a href="index.html" data-transition="fade">Toei Channel</a></h1>
+    </header>
+
+    <div id="search" class="modal">
+  <header class="bar bar-nav">
+    <a class="icon icon-close pull-right" href="#search"></a>
+    <h1 class="title">Search</h1>
+  </header>
+
+  <div class="content">
+  <br>
+    <p class="content-padded">
+        <label>Search by keywords:</label>
+        <input type="search" placeholder="Search">
+        <button class="btn btn"><span class="icon icon-search"></span> Search</button>
+        <br><br>
+        <div class="card">
+          <ul class="table-view">
+          <li class="table-view-cell table-view-divider">Genre:</li>
+            <li class="table-view-cell"><a href="#">Tokusatsu</a></li>
+            <li class="table-view-cell"><a href="#">Anime</a></li>
+            <li class="table-view-cell"><a href="#">Drama</a></li>
+            <li class="table-view-cell"><a href="#">Other</a></li>
+            <li class="table-view-cell table-view-divider">Decade:</li>
+            <li class="table-view-cell"><a href="#">2010's</a></li>
+            <li class="table-view-cell"><a href="#">2000's</a></li>
+            <li class="table-view-cell"><a href="#">1990's</a></li>
+            <li class="table-view-cell"><a href="#">1980's</a></li>
+            <li class="table-view-cell"><a href="#">1970's</a></li>
+          </ul>
+        </div>
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+    <div class="content">
+         <div class="segmented-control">
+            <a class="control-item" href="shows.html" data-transition="fade">Shows</a>
+            <a class="control-item" href="movies.html" data-transition="fade">Movies</a>
+            <a class="control-item active" href="schedule.html" data-transition="fade">Schedule</a>
+          </div>
+          <div class="content-padded">
+                <br><br>
+              <h2>On Now</h2>
+              <div class='embed-container'><iframe src='http://www.youtube.com/embed/VXFDtU6l59o' frameborder='0' allowfullscreen></iframe></div><br><br>
+              <h3>Kaizoku Sentai Gokaiger</h3>
+              <h4>The Space Pirates Appear</h4>
+              <p>A band of space pirates known as the Gokaiger arrive on Earth in pursuit of a legendary treasure tied to the 34 previous Sentai teams of the planet, who had all sacrificed their powers to stop the Zangyack Empire.</p>
+            <br><br>
+
+<h2>Schedule</h2>
+
+<br>
+
+              <div class="segmented-control">
+				  <a class="control-item active" href="#item1mobile">
+				    Upcoming
+				  </a>
+				  <a class="control-item" href="#item2mobile">
+				    Tomorrow
+				  </a>
+				  <a class="control-item" href="#item3mobile">
+				    Yesterday
+				  </a>
+				</div>
+				<div class="card">
+				  <div id="item1mobile" class="control-content active">
+					  <ul class="table-view">
+						  <li class="table-view-cell media">
+						    <a class="navigate-right">
+						      <img class="media-object pull-left" src="img/krw.jpg">
+						      <div class="media-body">
+						        Kamen Rider W
+						        <p><strong>Ep 3: How to Get to Heaven</strong><br>
+						        3:30pm | G | Tokusatsu<br><br>
+								A couple who owns a pastry shop arrive to hire Shotaro to follow their daughter Yuko Izumi, who has been acting strange recently.</p>
+								<button class="btn">Remind Me</button>
+						      </div>
+						    </a>
+						  </li>
+						  <li class="table-view-cell media">
+						    <a class="navigate-right">
+						      <img class="media-object pull-left" src="img/gytm.jpg">
+						      <div class="media-body">
+						        GARO: Yami wo Terasu Mono
+						        <p><strong>Ep 3: Dungeon</strong><br>
+						        4:30pm | M | Tokusatsu<br><br>
+								Overhearing rumors of a naked woman appearing in Vol City's F4 Entrance, Takeru intends to meet the urban legend.</p>
+								<button class="btn">Remind Me</button>
+						      </div>
+						    </a>
+						  </li>
+						  <li class="table-view-cell media">
+						    <a class="navigate-right">
+						      <img class="media-object pull-left" src="img/ug.jpg">
+						      <div class="media-body">
+						        Ultraman Ginga
+						        <p><strong>Ep 11: Your Future</strong><br>
+						        5:30pm | G | Tokusatsu<br><br>
+								With the defeat of Super Grand King, Misuzu and her father Seiichiro finally make up. All of a sudden, Seiichiro collapses to the ground, followed by everyone else.</p>
+								<button class="btn">Remind Me</button>
+						      </div>
+						    </a>
+						  </li>
+						</ul>
+				  </div>
+
+				  <div id="item2mobile" class="control-content"><ul class="table-view">
+						  <li class="table-view-cell media">
+						    <a class="navigate-right">
+						      <img class="media-object pull-left" src="img/krw.jpg">
+						      <div class="media-body">
+						        Kamen Rider W
+						        <p><strong>Ep 3: How to Get to Heaven</strong><br>
+						        3:30pm | G | Tokusatsu<br><br>
+								A couple who owns a pastry shop arrive to hire Shotaro to follow their daughter Yuko Izumi, who has been acting strange recently.</p>
+								<button class="btn">Remind Me</button>
+						      </div>
+						    </a>
+						  </li>
+						  <li class="table-view-cell media">
+						    <a class="navigate-right">
+						      <img class="media-object pull-left" src="img/gytm.jpg">
+						      <div class="media-body">
+						        GARO: Yami wo Terasu Mono
+						        <p><strong>Ep 3: Dungeon</strong><br>
+						        4:30pm | M | Tokusatsu<br><br>
+								Overhearing rumors of a naked woman appearing in Vol City's F4 Entrance, Takeru intends to meet the urban legend.</p>
+								<button class="btn">Remind Me</button>
+						      </div>
+						    </a>
+						  </li>
+						  <li class="table-view-cell media">
+						    <a class="navigate-right">
+						      <img class="media-object pull-left" src="img/ug.jpg">
+						      <div class="media-body">
+						        Ultraman Ginga
+						        <p><strong>Ep 11: Your Future</strong><br>
+						        5:30pm | G | Tokusatsu<br><br>
+								With the defeat of Super Grand King, Misuzu and her father Seiichiro finally make up. All of a sudden, Seiichiro collapses to the ground, followed by everyone else.</p>
+								<button class="btn">Remind Me</button>
+						      </div>
+						    </a>
+						  </li>
+						</ul></div>
+				  <div id="item3mobile" class="control-content"><ul class="table-view">
+						  <li class="table-view-cell media">
+						    <a class="navigate-right">
+						      <img class="media-object pull-left" src="img/krw.jpg">
+						      <div class="media-body">
+						        Kamen Rider W
+						        <p><strong>Ep 3: How to Get to Heaven</strong><br>
+						        3:30pm | G | Tokusatsu<br><br>
+								A couple who owns a pastry shop arrive to hire Shotaro to follow their daughter Yuko Izumi, who has been acting strange recently.</p>
+								<button class="btn">Remind Me</button>
+						      </div>
+						    </a>
+						  </li>
+						  <li class="table-view-cell media">
+						    <a class="navigate-right">
+						      <img class="media-object pull-left" src="img/gytm.jpg">
+						      <div class="media-body">
+						        GARO: Yami wo Terasu Mono
+						        <p><strong>Ep 3: Dungeon</strong><br>
+						        4:30pm | M | Tokusatsu<br><br>
+								Overhearing rumors of a naked woman appearing in Vol City's F4 Entrance, Takeru intends to meet the urban legend.</p>
+								<button class="btn">Remind Me</button>
+						      </div>
+						    </a>
+						  </li>
+						  <li class="table-view-cell media">
+						    <a class="navigate-right">
+						      <img class="media-object pull-left" src="img/ug.jpg">
+						      <div class="media-body">
+						        Ultraman Ginga
+						        <p><strong>Ep 11: Your Future</strong><br>
+						        5:30pm | G | Tokusatsu<br><br>
+								With the defeat of Super Grand King, Misuzu and her father Seiichiro finally make up. All of a sudden, Seiichiro collapses to the ground, followed by everyone else.</p>
+								<button class="btn">Remind Me</button>
+						      </div>
+						    </a>
+						  </li>
+						</ul></div>
+				</div>
+      </div>
+    </div>
+
+        <script type="text/javascript" src="phonegap.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+          $(document).ready(function(){
+            app.initialize();
+            window.addEventListener('push', myFunction);
+          });
+        </script>
+    </body>
+</html>

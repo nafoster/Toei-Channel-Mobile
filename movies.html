@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+         <!-- Include the compiled Ratchet CSS -->
+    <link href="css/ratchet.css" rel="stylesheet">
+    <link href="css/ratchet-theme-android.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Include the compiled Ratchet JS -->
+    <script src="js/ratchet.min.js"></script>
+    <script src="js/push.js"></script>
+        <title>Toei Channel</title>
+    </head>
+    <body>
+            <!-- Make sure all your bars are the first things in your <body> -->
+    <header class="bar bar-nav">
+    <a href="#search" class="icon icon-search pull-left"></a>
+
+        <button class="btn pull-right">
+        Your Account
+      </button>
+      <h1 class="title"> <a href="index.html" data-transition="fade">Toei Channel</a></h1>
+    </header>
+
+    <div id="search" class="modal">
+  <header class="bar bar-nav">
+    <a class="icon icon-close pull-right" href="#search"></a>
+    <h1 class="title">Search</h1>
+  </header>
+
+  <div class="content">
+  <br>
+    <p class="content-padded">
+        <label>Search by keywords:</label>
+        <input type="search" placeholder="Search">
+        <button class="btn btn"><span class="icon icon-search"></span> Search</button>
+        <br><br>
+        <div class="card">
+          <ul class="table-view">
+          <li class="table-view-cell table-view-divider">Genre:</li>
+            <li class="table-view-cell"><a href="#">Tokusatsu</a></li>
+            <li class="table-view-cell"><a href="#">Anime</a></li>
+            <li class="table-view-cell"><a href="#">Drama</a></li>
+            <li class="table-view-cell"><a href="#">Other</a></li>
+            <li class="table-view-cell table-view-divider">Decade:</li>
+            <li class="table-view-cell"><a href="#">2010's</a></li>
+            <li class="table-view-cell"><a href="#">2000's</a></li>
+            <li class="table-view-cell"><a href="#">1990's</a></li>
+            <li class="table-view-cell"><a href="#">1980's</a></li>
+            <li class="table-view-cell"><a href="#">1970's</a></li>
+          </ul>
+        </div>
+    </p>
+  </div>
+</div>
+
+    <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+    <div class="content">
+         <div class="segmented-control">
+            <a class="control-item" href="shows.html" data-transition="fade">Shows</a>
+            <a class="control-item active" href="movies.html" data-transition="fade">Movies</a>
+            <a class="control-item" href="schedule.html" data-transition="fade">Schedule</a>
+          </div>
+          <div class="content-padded">
+                <br><br>
+              <h2>On Now</h2>
+              <div class='embed-container'><iframe src='http://www.youtube.com/embed/VXFDtU6l59o' frameborder='0' allowfullscreen></iframe></div><br><br>
+              <h3>Kaizoku Sentai Gokaiger</h3>
+              <h4>The Space Pirates Appear</h4>
+              <p>A band of space pirates known as the Gokaiger arrive on Earth in pursuit of a legendary treasure tied to the 34 previous Sentai teams of the planet, who had all sacrificed their powers to stop the Zangyack Empire.</p>
+            <br><br>
+
+<h2>Genres</h2>
+<ul class="table-view">
+  <li class="table-view-cell">
+    Tokusatsu
+    <div class="toggle">
+      <div class="toggle-handle"></div>
+    </div>
+  </li>
+  <li class="table-view-cell">
+    Anime
+    <div class="toggle">
+      <div class="toggle-handle"></div>
+    </div>
+  </li>
+  <li class="table-view-cell">
+    Drama
+    <div class="toggle">
+      <div class="toggle-handle"></div>
+    </div>
+  </li>
+  <li class="table-view-cell">
+    Other
+    <div class="toggle">
+      <div class="toggle-handle"></div>
+    </div>
+  </li>
+</ul>
+<br><br>
+
+              <h2><a href="#">Recommendations</a></h2>
+              <ul class="table-view">
+                  <li class="table-view-cell media">
+                    <a class="navigate-right">
+                      <img class="media-object pull-left" src="img/sss.jpg">
+                      <div class="media-body">
+                        Samurai Sentai Shinkenger
+                        <p>For 17 generations, the war between the Shinkengers and Ayakashi continued, with slight reprieve given due to a massive sacrifice of the former leader to temporarily stop the Gedoshuu leader, Doukoku Chimatsuri.</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="table-view-cell media">
+                    <a class="navigate-right">
+                      <img class="media-object pull-left" src="img/kyo.jpg">
+                      <div class="media-body">
+                        Zyuden Sentai Kyoryuger<br>
+                        <p>
+                        Long ago, in the time of the dinosaurs, the Earth was invaded by an alien menace called Deboth, the leader of an invasion army. On the verge of extinction, some of the dinosaurs are transformed into Zyudenryu and seal Deboth and his forces in ice.</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="table-view-cell media">
+                    <a class="navigate-right">
+                      <img class="media-object pull-left" src="img/megamax.jpg">
+                      <div class="media-body">
+                        Movie War Mega Max<br>
+                        <p>
+                        With the movie seperated into 5 parts, the story follows Kamen Rider OOO, Kamen Rider Fourze, and Kamen Rider W as their universes cross to defeat the Dai-Shocker.</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="table-view-cell media">
+                    <a class="navigate-right">
+                      <img class="media-object pull-left" src="img/krw.jpg">
+                      <div class="media-body">
+                        Kamen Rider W<br>
+                        <p>
+                        In the ecologically-minded city of Fuuto, where nearly everything is powered by windmills, the people live in harmony. However, the Sonozaki Family sell mysterious devices resembling USB flash drives called Gaia Memories to criminals and other interested parties who use them to become monsters called Dopants, committing crimes with the police force powerless to stop them.</p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              <br><br>
+
+              <h2><a href="#">Popular Movies</a></h2>
+              <ul class="table-view">
+                  <li class="table-view-cell media">
+                    <a href="gokaiger.html" class="navigate-right" data-transition="fade">
+                      <img class="media-object pull-left" src="img/ksg.jpg">
+                      <div class="media-body">
+                        Kaizoku Sentai Gokaiger
+                        <p>A group of young pirates come from space to Earth to obtain the "Greatest Treasure in the Universe", which can only be acquired after obtaining the "Greater Powers" of the different 34 Super Sentai Teams.</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="table-view-cell media">
+                    <a class="navigate-right">
+                      <img class="media-object pull-left" src="img/sss.jpg">
+                      <div class="media-body">
+                        Samurai Sentai Shinkenger<br>
+                        <p>
+                        For 17 generations, the war between the Shinkengers and Ayakashi continued, with slight reprieve given due to a massive sacrifice of the former leader to temporarily stop the Gedoshuu leader, Doukoku Chimatsuri.</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="table-view-cell media">
+                    <a class="navigate-right">
+                      <img class="media-object pull-left" src="img/krw.jpg">
+                      <div class="media-body">
+                        Kamen Rider W<br>
+                        <p>
+                        In the ecologically-minded city of Fuuto, where nearly everything is powered by windmills, the people live in harmony. However, the Sonozaki Family sell mysterious devices resembling USB flash drives called Gaia Memories to criminals and other interested parties who use them to become monsters called Dopants, committing crimes with the police force powerless to stop them.</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="table-view-cell media">
+                    <a class="navigate-right">
+                      <img class="media-object pull-left" src="img/ug.jpg">
+                      <div class="media-body">
+                        Ultraman Ginga<br>
+                        <p>
+                        All of the Ultramen and monsters have been turned into figures known as Spark Dolls and became scattered throughout the universe. A young man named Hikaru Raidō finds an item called the Ginga Spark which not only allows him to become Ultraman Ginga, but also allows him to go Ultraive with the figures to change them to their rightful size and become one with them.</p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              <br><br>
+
+              
+              <h2><a href="#">New Movies<a></h2>
+              <ul class="table-view">
+                  <li class="table-view-cell media">
+                    <a class="navigate-right">
+                      <img class="media-object pull-left" src="img/ug.jpg">
+                      <div class="media-body">
+                        Ultraman Ginga
+                        <p>
+                        <strong>Episode 2: A Midsummer Night's Dream</strong><br>
+                        While Alien Valky is dancing and teasing the Spark Dolls, Darker Gale approaches him and give Valky a new mission.</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="table-view-cell media">
+                    <a class="navigate-right">
+                      <img class="media-object pull-left" src="img/kyo.jpg">
+                      <div class="media-body">
+                        Zyuden Sentai Kyoryuger<br>
+                        <p>
+                        <strong>Episode 2: Gaburincho! Biting Combination</strong><br>
+                        At the request of a girl named Rika Fukui and her friends, Daigo builds a T-Rex statue for an upcoming museum exhibit before he meets two of the people he met earlier at the Tiger Boy: Rika's uncle Nobuharu Udo and a rich girl named Amy Yuuzuki. However, a group of Zorima under the Debo Monster Debo Peshango appear with Daigo transforming into Kyoryu Red to fight them before going after Debo Peshango.</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="table-view-cell media">
+                    <a class="navigate-right">
+                      <img class="media-object pull-left" src="img/hungry.jpg">
+                      <div class="media-body">
+                        Hungry!<br>
+                        <p>
+                        <strong>Episode 1</strong><br>
+                        Eisuke Yamate is a member of rock group "Rock Head," which he formed with friends 15 years ago. His mother is a chef who specializes in French cuisine. Eisuke was also born with a natural talent for cooking and until the age of 13, dreamed of becoming a French chef.</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="table-view-cell media">
+                    <a class="navigate-right">
+                      <img class="media-object pull-left" src="img/ouran.jpg">
+                      <div class="media-body">
+                        Ouran Host Club<br>
+                        <p>
+                        <strong>Episode 5: The Twins Fight!</strong><br>
+                        Hikaru and Kaoru beg to be allowed to visit Haruhi's home, but she refuses. Haruhi comments about the differences between Hikaru and Kaoru, which triggers a fight between the inseparable siblings, even making them dye their hair different colors (blue and pink) in order to be told apart. </p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+            </div>
+      </div>
+    </div>
+
+        <script type="text/javascript" src="phonegap.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+          $(document).ready(function(){
+            app.initialize();
+            window.addEventListener('push', myFunction);
+          });
+        </script>
+    </body>
+</html>
